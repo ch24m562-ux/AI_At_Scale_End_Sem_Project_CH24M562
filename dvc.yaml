@@ -1,0 +1,8 @@
+stages:
+  preprocess:
+    cmd: python preprocess.py data/train.csv data/processed
+    deps:
+    - data/train.csv
+    - preprocess.py
+    outs:
+    - data/processed
