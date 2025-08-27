@@ -9,5 +9,6 @@ stages:
     deps:
     - data/train.csv
     - eda.py
-    outs:
-    - reports/eda
+    # outs:
+    # - reports/eda  # Removed to allow dvc add
+

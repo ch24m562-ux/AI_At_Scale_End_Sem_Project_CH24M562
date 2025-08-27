@@ -1,0 +1,6 @@
+outs:
+- md5: 15e4190eec059d3cccda4ada588e060f.dir
+  size: 3711
+  nfiles: 1
+  hash: md5
+  path: eda

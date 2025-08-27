@@ -1,22 +1,5 @@
 schema: '2.0'
 stages:
-  preprocess:
-    cmd: python preprocess.py data/train.csv data/processed
-    deps:
-    - path: data/train.csv
-      hash: md5
-      md5: 2309cc5f04782ed9bb6016d9f4e381cf
-      size: 61194
-    - path: preprocess.py
-      hash: md5
-      md5: 49943f81d9f75c56a2541b0de50b865b
-      size: 1373
-    outs:
-    - path: data/processed
-      hash: md5
-      md5: 55b2308b25751d6f38466ea53fe2a140.dir
-      size: 24371
-      nfiles: 4
   eda:
     cmd: python eda.py data/train.csv reports/eda
     deps:
