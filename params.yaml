@@ -1,0 +1,9 @@
+lr:
+  maxIter: 50
+  regParam: 0.0
+  elasticNetParam: 0.0
+spark:
+  sql_shuffle_partitions: 16
+seed: 42
+tvs:
+  trainRatio: 0.8
