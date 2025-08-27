@@ -6,3 +6,10 @@ stages:
     - preprocess.py
     outs:
     - data/processed
+  eda:
+    cmd: python eda.py data/train.csv reports/eda
+    deps:
+    - data/train.csv
+    - eda.py
+    outs:
+    - reports/eda
