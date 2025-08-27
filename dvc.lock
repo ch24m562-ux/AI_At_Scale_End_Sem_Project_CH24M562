@@ -17,3 +17,21 @@ stages:
       md5: 15e4190eec059d3cccda4ada588e060f.dir
       size: 3711
       nfiles: 1
+  combine_single:
+    cmd: python combine.py
+    deps:
+    - path: combine.py
+      hash: md5
+      md5: 72454bc47ba899a4d68f611dc4503b08
+      size: 262
+    - path: data/processed
+      hash: md5
+      md5: 0139f54f1b6502b0d144d2f064a4db5e.dir
+      size: 24371
+      nfiles: 4
+    outs:
+    - path: data/processed_single
+      hash: md5
+      md5: 9002c7d849508e4582f3ccdd9645d446.dir
+      size: 24371
+      nfiles: 4
