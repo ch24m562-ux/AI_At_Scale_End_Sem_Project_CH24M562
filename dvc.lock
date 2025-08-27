@@ -17,3 +17,20 @@ stages:
       md5: 031973d41e878f39ff45ce251e678fd3.dir
       size: 24371
       nfiles: 4
+  eda:
+    cmd: python eda.py data/train.csv reports/eda
+    deps:
+    - path: data/train.csv
+      hash: md5
+      md5: 2309cc5f04782ed9bb6016d9f4e381cf
+      size: 61194
+    - path: eda.py
+      hash: md5
+      md5: 50d774d0e1f053a5b533a1b658b9ec86
+      size: 1331
+    outs:
+    - path: reports/eda
+      hash: md5
+      md5: 15e4190eec059d3cccda4ada588e060f.dir
+      size: 3711
+      nfiles: 1
