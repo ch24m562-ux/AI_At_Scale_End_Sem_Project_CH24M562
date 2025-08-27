@@ -12,3 +12,10 @@ stages:
     # outs:
     # - reports/eda  # Removed to allow dvc add
 
+  combine_single:
+    cmd: python combine.py
+    deps:
+    - combine.py
+    - data/processed
+    outs:
+    - data/processed_single
